@@ -1,0 +1,42 @@
+{
+  "name": "@glisco/fatturapa-toolkit",
+  "version": "1.0.0",
+  "description": "Libreria TypeScript zero-dependency ed estensione Chrome per aprire file FatturaPA .xml e .xml.p7m firmati CAdES, controllare errori di scarto SdI (00305, 00311, 00400, 00421, 00422) e calcolare il bollo trimestrale F24.",
+  "license": "MIT",
+  "homepage": "https://fatturaeconomica.it/visualizzatore-fattura-elettronica",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glisco/fatturapa-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glisco/fatturapa-toolkit/issues"
+  },
+  "author": "Glisco s.n.c. di Paolo e Michele Comitini <info@glisco.it> (https://fatturaeconomica.it)",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "keywords": [
+    "fatturapa",
+    "fattura-elettronica",
+    "sdi",
+    "sistema-di-interscambio",
+    "p7m",
+    "xml-p7m",
+    "cades",
+    "pkcs7",
+    "imposta-di-bollo",
+    "forfettario",
+    "rf19",
+    "italia",
+    "chrome-extension"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}

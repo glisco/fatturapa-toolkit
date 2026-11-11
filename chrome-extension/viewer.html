@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visualizzatore FatturaPA XML e P7M — FatturaEconomica</title>
+  <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+  <header class="topbar no-print">
+    <div class="brand">
+      <img src="icons/icon-48.png" width="28" height="28" alt="">
+      <div>
+        <strong>Visualizzatore FatturaPA XML e P7M</strong>
+        <span class="sub">di <a href="https://fatturaeconomica.it/?utm_source=chrome_extension&utm_medium=referral" target="_blank" rel="noopener">FatturaEconomica</a> · 100% locale nel browser</span>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn-outline" href="https://fatturaeconomica.it/controllo-fattura-xml?utm_source=chrome_extension&utm_medium=referral" target="_blank" rel="noopener">Controllo errori SdI</a>
+      <a class="btn-primary" href="https://fatturaeconomica.it/?utm_source=chrome_extension&utm_medium=referral" target="_blank" rel="noopener">Emetti e ricevi gratis →</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="dropzone" class="dropzone no-print">
+      <h1>Trascina qui il file <code>.xml</code> o <code>.xml.p7m</code></h1>
+      <p>Nessun dato esce dal tuo computer: la busta firmata CAdES viene aperta localmente.</p>
+      <div class="drop-buttons">
+        <label class="btn-primary">
+          Scegli file .xml o .p7m
+          <input id="fileInput" type="file" accept=".xml,.p7m,text/xml,application/xml,application/pkcs7-mime" hidden>
+        </label>
+        <button id="sampleBtn" type="button" class="btn-outline">Prova con fattura d'esempio</button>
+      </div>
+    </section>
+
+    <div id="errorBox" class="error-box no-print" hidden></div>
+
+    <div id="toolbar" class="doc-toolbar no-print" hidden>
+      <div class="doc-info">
+        <span id="fileNameLabel" class="file-name"></span>
+        <span id="signedBadge" class="badge" hidden>Busta firmata .p7m aperta</span>
+        <select id="lotSelect" hidden></select>
+      </div>
+      <div class="doc-actions">
+        <button id="downloadXmlBtn" type="button" class="btn-outline">Scarica .xml pulito</button>
+        <button id="printBtn" type="button" class="btn-primary">Stampa / Salva PDF</button>
+      </div>
+    </div>
+
+    <div id="sheetRoot"></div>
+  </main>
+
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>

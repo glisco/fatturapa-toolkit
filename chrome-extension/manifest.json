@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Visualizzatore FatturaPA XML e P7M — FatturaEconomica",
+  "short_name": "FatturaPA XML",
+  "version": "1.0.0",
+  "description": "Apri e stampa gratis file di fattura elettronica .xml e .xml.p7m firmati nel browser, senza caricare dati su server.",
+  "homepage_url": "https://fatturaeconomica.it/visualizzatore-fattura-elettronica",
+  "permissions": [],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Apri Visualizzatore FatturaPA XML / P7M",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
