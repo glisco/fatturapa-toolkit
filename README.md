@@ -4,8 +4,8 @@ Libreria TypeScript **zero-dependency** (funziona identica nel browser, in Node.
 
 ## Usalo subito online (100% nel browser, nessun file inviato ai server)
 
-- **[Visualizzatore fattura elettronica XML e P7M](https://fatturaeconomica.it/visualizzatore-fattura-elettronica)** — apri file `.xml` e buste firmate `.xml.p7m` CAdES, scarica gli allegati interni e stampa il PDF di cortesia.
-- **[Controllo formale fattura XML pre-invio SdI](https://fatturaeconomica.it/controllo-fattura-xml)** — intercetta prima dell'invio gli errori di scarto più frequenti (`00305`, `00306`, `00311`, `00400`, `00419`, `00421`, `00422`, bollo mancante sopra 77,47 €, incongruenze del regime forfettario `RF19` / `N2.2`).
+- **[Visualizzatore fattura elettronica XML e P7M](https://fatturaeconomica.it/visualizzatore-fattura-elettronica)** — apri file `.xml` e buste firmate `.xml.p7m` CAdES, scarica gli allegati interni e stampa il PDF di cortesia. Disponibile anche come **[estensione sul Chrome Web Store](https://chromewebstore.google.com/detail/bdbfhebkdeimmfbdmihhfjpkmncabjfl)**.
+- **[Controllo formale fattura XML pre-invio SdI](https://fatturaeconomica.it/controllo-fattura-xml)** — intercetta prima dell'invio gli errori di scarto più frequenti ([`00305`](https://fatturaeconomica.it/errori-sdi/00305), `00306`, [`00311`](https://fatturaeconomica.it/errori-sdi/00311), `00400`, `00419`, `00421`, `00422`, bollo mancante sopra 77,47 €, incongruenze del regime forfettario [`RF19`](https://fatturaeconomica.it/codici/rf19-regime-forfettario) / `N2.2`).
 - **[Calcolatore bollo trimestrale FatturaPA](https://fatturaeconomica.it/calcolatore-bollo)** — calcola importi, rinvio automatico sotto la soglia cumulativa di 5.000 € (D.L. 73/2022), slittamenti festivi italiani e codici tributo F24 (`2521`–`2524`).
 
 ---
@@ -61,8 +61,11 @@ npm run typecheck
 
 ## Documentazione di riferimento (su fatturaeconomica.it)
 
-- [Tutti i codici di scarto SdI spiegati con causa e soluzione](https://fatturaeconomica.it/errori-sdi)
-- [Tabella completa codici FatturaPA: TD, Natura IVA N1–N7, Regimi RF01–RF20, Pagamenti MP](https://fatturaeconomica.it/codici)
+- [Tutti i codici di scarto SdI spiegati con causa e soluzione](https://fatturaeconomica.it/errori-sdi):
+  - [Errore SdI 00305 — Partita IVA non valida](https://fatturaeconomica.it/errori-sdi/00305)
+  - [Errore SdI 00311 — Codice destinatario non valido](https://fatturaeconomica.it/errori-sdi/00311)
+- [Tabella completa codici FatturaPA: TD, Natura IVA N1–N7, Regimi RF01–RF20, Pagamenti MP](https://fatturaeconomica.it/codici):
+  - [Codice RF19 — Regime forfettario nella fattura elettronica](https://fatturaeconomica.it/codici/rf19-regime-forfettario)
 - [Guida pratica alla fattura elettronica nel regime forfettario (RF19, N2.2, bollo)](https://fatturaeconomica.it/guide/fattura-elettronica-forfettario)
 - [Scadenze bollo fatture elettroniche e codici tributo F24](https://fatturaeconomica.it/scadenze/bollo-fattura-elettronica-trimestrale)
 - [Osservatorio errori SdI](https://fatturaeconomica.it/osservatorio-errori-sdi)
